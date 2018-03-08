@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org//testng-1.0.dtd">
+<suite name="FreeCRM App Automation Test Suite">
+	<listeners>
+		<listener class-name="com.freeCRM.qa.ExtentReportListener.ExtentReporterNG" />
+		<listener class-name="RetryAnalyzer.RetryTransformer" />
+	</listeners>
+	<test name="FreeCRMTest">
+		<classes>
+			<class name="com.freeCRM.qa.testcases.LoginTest"></class>
+<!-- 			<class name="com.freeCRM.qa.testcases.HomePageTest"></class> -->
+<!-- 			<class name="com.freeCRM.qa.testcases.ContactsPageTest"></class> -->
+		</classes>
+	</test>
+</suite>

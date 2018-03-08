@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" name="Failed suite [FreeCRM App Automation Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.freeCRM.qa.ExtentReportListener.ExtentReporterNG"/>
+    <listener class-name="RetryAnalyzer.RetryTransformer"/>
+  </listeners>
+  <test name="FreeCRMTest(failed)">
+    <classes>
+      <class name="com.freeCRM.qa.testcases.LoginTest">
+        <methods>
+          <include name="loginPageTitleTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.freeCRM.qa.testcases.LoginTest -->
+    </classes>
+  </test> <!-- FreeCRMTest(failed) -->
+</suite> <!-- Failed suite [FreeCRM App Automation Test Suite] -->
